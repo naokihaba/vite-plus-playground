@@ -15,8 +15,8 @@ Use Node.js 22.18.0 or later in the 22.x series, 24.11.0 or later in the 24.x se
 ## Start
 
 ```bash
-git clone https://github.com/naokihaba/vite-plus-playgroudn.git
-cd vite-plus-playgroudn
+git clone https://github.com/naokihaba/vite-plus-playground.git
+cd vite-plus-playground
 pnpm install
 pnpm exec vp run dev
 ```
