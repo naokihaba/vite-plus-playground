@@ -1,16 +1,18 @@
 # Vite+ Playground
 
-[Vite+ v1.0.0-rc.0](https://github.com/voidzero-dev/vite-plus/releases/tag/v1.0.0-rc.0) を試すためのワークスペースです。公式の `vite:monorepo` テンプレートから作成しました。
+This workspace uses [Vite+ v1.0.0-rc.0](https://github.com/voidzero-dev/vite-plus/releases/tag/v1.0.0-rc.0). It is based on the official `vite:monorepo` template.
 
-## 構成
+## Contents
 
-- `apps/website`: Vite で動く Web アプリ。画面とカウンターを編集して HMR を試せます。
-- `packages/utils`: `vite-plus/test` を使うテストと、`vp pack` を使うライブラリの例です。
-- `vite.config.ts`: 整形、Lint、型チェック、タスクキャッシュの設定です。
+- `apps/website`: A Vite web app. Edit the page or counter to try hot module replacement (HMR).
+- `packages/utils`: A library with a `vite-plus/test` test and a `vp pack` build.
+- `vite.config.ts`: Settings for formatting, lint, type checks, and task caching.
 
-## 実行
+## Requirements
 
-Node.js は 22.18 以降の 22 系、24.11 以降の 24 系、または 26 以降が必要です。この Playground は pnpm 12.4.2 を使います。
+Use Node.js 22.18.0 or later in the 22.x series, 24.11.0 or later in the 24.x series, or 26.0.0 or later. This workspace uses pnpm 12.4.2.
+
+## Start
 
 ```bash
 git clone https://github.com/naokihaba/vite-plus-playgroudn.git
@@ -19,15 +21,15 @@ pnpm install
 pnpm exec vp run dev
 ```
 
-開発サーバーの URL を開き、`apps/website/src/main.ts` を編集してください。以下の `vp` コマンドは、グローバル版を使わない場合は `pnpm exec vp` に置き換えられます。
+Open the URL shown by the development server. Edit `apps/website/src/main.ts` to try HMR. If you do not have the global `vp` command, use `pnpm exec vp` for the commands below.
 
-## 検証コマンド
+## Check the workspace
 
 ```bash
-vp check          # 整形、Lint、型チェック
-vp run -r test    # Vitest 5 のテスト
-vp run -r build   # Web アプリとライブラリのビルド
-vp run ready      # 上記をまとめて実行
+vp check          # Check format, lint, and types
+vp run -r test    # Run the Vitest 5 test
+vp run -r build   # Build the web app and library
+vp run ready      # Run all checks above
 ```
 
-`vp run` はワークスペースのスクリプトを実行します。アプリの開発サーバーは `vp run dev`、ライブラリ単体のテストは `cd packages/utils && vp test` で試せます。
+`vp run` runs workspace scripts. Use `vp run dev` to start the web app. To test only the library, go to `packages/utils` and run `vp test`.

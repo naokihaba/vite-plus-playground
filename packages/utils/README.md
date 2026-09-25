@@ -1,6 +1,6 @@
 # utils
 
-`vp test` と `vp pack` を試すためのサンプルライブラリです。
+This sample library lets you try `vp test` and `vp pack`.
 
 ```bash
 vp test
