@@ -1,6 +1,6 @@
 # Vite+ Playground
 
-This workspace uses [Vite+ v1.0.0-rc.0](https://github.com/voidzero-dev/vite-plus/releases/tag/v1.0.0-rc.0). It is based on the official `vite:monorepo` template.
+This workspace uses [Vite+ v1.0.0](https://github.com/voidzero-dev/vite-plus/releases/tag/v1.0.0). It is based on the official `vite:monorepo` template.
 
 ## Contents
 
